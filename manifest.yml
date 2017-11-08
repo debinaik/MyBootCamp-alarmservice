@@ -1,0 +1,10 @@
+---
+applications:
+  - name: debi-predix-alarmservice
+    memory: 512M
+    buildpack: java_buildpack
+    path: target/alarmservice-0.0.1-SNAPSHOT.jar
+    services:
+      - debi-postgres
+env:
+    db_service_name: debi-postgres
